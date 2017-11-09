@@ -1,0 +1,136 @@
+Last login: Wed Nov  1 10:02:36 on console
+Ashwins-MacBook-Pro:~ ashwin$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+Ashwins-MacBook-Pro:~ ashwin$ pwd
+/Users/ashwin
+Ashwins-MacBook-Pro:~ ashwin$ cd Desktop
+Ashwins-MacBook-Pro:Desktop ashwin$ man git
+Ashwins-MacBook-Pro:Desktop ashwin$ pwd
+/Users/ashwin/Desktop
+Ashwins-MacBook-Pro:Desktop ashwin$ mkdir GitHub Test Practice
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ 
+Ashwins-MacBook-Pro:Desktop ashwin$ rm Test
+rm: Test: is a directory
+Ashwins-MacBook-Pro:Desktop ashwin$ rm -rf Test
+Ashwins-MacBook-Pro:Desktop ashwin$ rm -rf Practice
+Ashwins-MacBook-Pro:Desktop ashwin$ ls
+GitHub
+Ashwins-MacBook-Pro:Desktop ashwin$ mv Github /Users/ashwin/Documents
+Ashwins-MacBook-Pro:Desktop ashwin$ pwd
+/Users/ashwin/Desktop
+Ashwins-MacBook-Pro:Desktop ashwin$ cd ../Documents
+Ashwins-MacBook-Pro:Documents ashwin$ pwd
+/Users/ashwin/Documents
+Ashwins-MacBook-Pro:Documents ashwin$ ls
+Github
+Ashwins-MacBook-Pro:Documents ashwin$ cd Github
+Ashwins-MacBook-Pro:Github ashwin$ pwd
+/Users/ashwin/Documents/Github
+Ashwins-MacBook-Pro:Github ashwin$ Gitlog
+-bash: Gitlog: command not found
+Ashwins-MacBook-Pro:Github ashwin$ git log
+fatal: Not a git repository (or any of the parent directories): .git
+Ashwins-MacBook-Pro:Github ashwin$ git init
+Initialized empty Git repository in /Users/ashwin/Documents/Github/.git/
+Ashwins-MacBook-Pro:Github ashwin$ git log
+fatal: your current branch 'master' does not have any commits yet
+Ashwins-MacBook-Pro:Github ashwin$ touch README.md 
+Ashwins-MacBook-Pro:Github ashwin$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+Ashwins-MacBook-Pro:Github ashwin$ git add README.md
+Ashwins-MacBook-Pro:Github ashwin$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+
+Ashwins-MacBook-Pro:Github ashwin$ git commit -m "Initial Commit"
+[master (root-commit) 198619f] Initial Commit
+ Committer: Ashwin Gopalakrishnan <ashwin@Ashwins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+Ashwins-MacBook-Pro:Github ashwin$ git log
+commit 198619fa1f9b23ec6cee84c2c70a5942946dac19 (HEAD -> master)
+Author: Ashwin Gopalakrishnan <ashwin@Ashwins-MacBook-Pro.local>
+Date:   Fri Nov 3 20:50:00 2017 -0400
+
+    Initial Commit
+Ashwins-MacBook-Pro:Github ashwin$ git config --global user.name
+Ashwins-MacBook-Pro:Github ashwin$ git config --global user.name "AshwinGopalakrishnan"
+Ashwins-MacBook-Pro:Github ashwin$ git remote add origin https://github.com/AshwinGopalakrishnan/GitHubTest.git
+Ashwins-MacBook-Pro:Github ashwin$ git push -u origin master
+Username for 'https://github.com': AshwinGopalakrishnan
+Password for 'https://AshwinGopalakrishnan@github.com': 
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/AshwinGopalakrishnan/GitHubTest.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Ashwins-MacBook-Pro:Github ashwin$ 
